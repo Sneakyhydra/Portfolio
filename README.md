@@ -44,4 +44,7 @@ Files to edit are in ```/public/data/articles```
 1) Edit the "articles.json" file. Here the key is the name of the article (Use hyphen(-) instead of spaces). All fields are mandatory.
 2) Inside the md folder place your MD file for this article. Rename it to your article name.
 
+### Deploying
+You can follow the official guide of Vercel on how to deploy a NextJs app ([Guide](https://nextjs.org/learn-pages-router/basics/deploying-nextjs-app/deploy))
+
 That's it. Now you have your own portfolio website! Please share it with others. Happy Coding :)
