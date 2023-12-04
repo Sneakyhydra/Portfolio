@@ -1,0 +1,52 @@
+.container {
+	width: 100%;
+	max-width: 820px;
+	padding: 2rem;
+	text-align: center;
+	border-radius: 0.5rem;
+	background: rgba(var(--background), 0.99);
+}
+
+.btn {
+	padding: 0;
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	background-color: rgb(var(--skills-primary));
+	border: none;
+}
+
+.btn:hover,
+.btn:focus,
+.btn:active {
+	background-color: rgb(var(--skills-secondary));
+	box-shadow: 0px 0px 0px 2px rgb(var(--foreground));
+	cursor: default;
+}
+
+.iconContainer {
+	padding: 0.5rem;
+	background-color: rgb(var(--skills-secondary));
+}
+
+.textContainer {
+	padding: 0.5rem;
+}
+
+@media screen and (min-width: 768px) {
+	.container {
+		width: 80%;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	.container {
+		width: 60%;
+	}
+}
+
+@media screen and (min-width: 1440px) {
+	.container {
+		width: 50%;
+	}
+}

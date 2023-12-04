@@ -1,0 +1,52 @@
+.imageContainer {
+	position: relative;
+	width: 100%;
+	height: 30vw;
+	margin: 0 auto;
+}
+
+.title {
+	font-weight: bold;
+	text-align: center;
+}
+
+.tech {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.btnContainer {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1rem;
+	justify-content: center;
+}
+
+.githubBtn,
+.liveBtn {
+	color: rgb(var(--foreground));
+	font-weight: bold;
+	width: 150px;
+}
+
+.githubBtn:hover,
+.githubBtn:focus,
+.githubBtn:active {
+	background-color: rgb(var(--foreground));
+	color: rgb(var(--background));
+	box-shadow: 0px 0px 0px 3px rgb(var(--foreground));
+}
+
+.liveBtn {
+	border-color: rgb(var(--about-primary));
+}
+
+.liveBtn:hover,
+.liveBtn:focus,
+.liveBtn:active {
+	border-color: rgb(var(--about-primary));
+	background-color: rgb(var(--about-primary));
+	color: rgb(var(--background));
+	box-shadow: 0px 0px 0px 3px rgb(var(--foreground));
+}

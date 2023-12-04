@@ -1,0 +1,14 @@
+.content {
+	margin: auto;
+	padding-top: 4rem;
+}
+
+.content div div div * {
+	color: rgb(var(--foreground)) !important;
+}
+
+@media screen and (min-width: 1024px) {
+	.content {
+		width: 80%;
+	}
+}

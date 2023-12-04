@@ -1,0 +1,26 @@
+.icon {
+	position: fixed;
+	z-index: 1000;
+	left: 0;
+	font-size: 2rem;
+	padding: 0 1rem;
+	top: 5rem;
+	transform: perspective(1px) translateZ(0);
+	box-shadow: 0 0 1px transparent;
+	margin: 10px;
+	transition-duration: 0.3s;
+	transition-property: box-shadow, transform;
+}
+
+.icon:hover {
+	cursor: pointer;
+	transform: scale(1.2);
+}
+
+@media screen and (min-width: 768px) {
+	.icon {
+		font-size: 3rem;
+		padding: 0 3rem;
+		top: 7.5rem;
+	}
+}

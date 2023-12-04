@@ -1,0 +1,104 @@
+.card {
+	width: 90vw;
+	border: 1px solid rgb(var(--background-secondary));
+	background-color: rgb(var(--background-secondary));
+	box-shadow: 0px 0px 10px 0px rgba(var(--background-secondary), 1);
+	color: rgb(var(--foreground));
+	transform: perspective(1px) translateZ(0);
+	margin: 10px;
+	transition-duration: 0.3s;
+	transition-property: box-shadow, transform;
+}
+
+.card:hover {
+	box-shadow: 0px 0px 10px 0px rgba(var(--projects-primary), 1);
+	transform: scale(1.05);
+}
+
+.image {
+	height: 40vw;
+}
+
+.title {
+	font-weight: bold;
+}
+
+.tech {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.btnContainer {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1rem;
+}
+
+.githubBtn,
+.liveBtn {
+	width: 150px;
+}
+
+.githubBtn,
+.githubBtn:visited,
+.githubBtn:focus,
+.githubBtn:active,
+.liveBtn,
+.liveBtn:visited,
+.liveBtn:focus,
+.liveBtn:active,
+.readBtn,
+.readBtn:visited,
+.readBtn:focus,
+.readBtn:active {
+	color: rgb(var(--foreground));
+	font-weight: bold;
+	background-color: transparent;
+}
+
+.githubBtn:hover {
+	background-color: rgb(var(--foreground));
+	color: rgb(var(--background));
+	box-shadow: 0px 0px 0px 3px rgb(var(--foreground));
+}
+
+.liveBtn {
+	border-color: rgb(var(--about-primary));
+}
+
+.liveBtn:hover {
+	border-color: rgb(var(--about-primary));
+	background-color: rgb(var(--about-primary));
+	color: rgb(var(--background));
+	box-shadow: 0px 0px 0px 3px rgb(var(--foreground));
+}
+
+.readBtn {
+	border-color: rgb(var(--projects-primary));
+}
+
+.readBtn:hover {
+	background-color: rgb(var(--projects-primary));
+	color: rgb(var(--background));
+	box-shadow: 0px 0px 0px 3px rgb(var(--foreground));
+}
+
+@media screen and (min-width: 768px) {
+	.card {
+		width: 70vw;
+	}
+
+	.image {
+		height: 30vw;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	.card {
+		width: 40vw;
+	}
+
+	.image {
+		height: 25vw;
+	}
+}

@@ -1,0 +1,111 @@
+.container {
+	width: 100%;
+	padding: 2rem;
+	text-align: center;
+	border-radius: 0.5rem;
+	background: rgba(var(--background), 0.99);
+}
+
+.container * {
+	font-size: 1.25rem;
+	text-align: center;
+	color: rgb(var(--foreground));
+}
+
+.container h1 {
+	font-size: 2.5rem;
+	text-align: center;
+	font-weight: bold;
+}
+
+.btnContainer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 2rem;
+	flex-wrap: wrap;
+}
+
+.resumeBtn,
+.resumeBtn:visited,
+.resumeBtn:focus,
+.resumeBtn:active {
+	border-color: rgb(var(--about-primary));
+	color: rgb(var(--foreground));
+	background-color: transparent;
+}
+
+.resumeBtn:hover {
+	border-color: rgb(var(--about-primary));
+	background-color: rgb(var(--about-primary));
+	color: rgb(var(--background));
+	box-shadow: 0 0 0 3px rgb(var(--foreground));
+}
+
+.dropdownBtn,
+.dropdownBtn:visited,
+.dropdownBtn:active,
+.dropdownBtn:focus {
+	border-color: rgb(var(--about-secondary));
+	color: rgb(var(--foreground));
+	background-color: transparent;
+}
+
+.dropdownBtn:hover {
+	border-color: rgb(var(--about-secondary));
+	background-color: rgb(var(--about-secondary));
+	color: rgb(var(--background));
+	box-shadow: 0 0 0 3px rgb(var(--foreground));
+}
+
+.dropdownItem {
+	color: rgb(var(--foreground));
+	background-color: transparent;
+}
+
+.dropdownItem:hover * {
+	background-color: rgb(var(--about-secondary));
+	color: rgb(var(--background));
+}
+
+.closeBtn,
+.closeBtn:visited,
+.closeBtn:focus,
+.closeBtn:active {
+	color: rgb(var(--danger));
+	background-color: transparent;
+	border-color: rgb(var(--danger));
+}
+
+.closeBtn:hover {
+	border-color: rgb(var(--danger));
+	background-color: rgb(var(--danger));
+	color: rgb(var(--foreground));
+	box-shadow: 0 0 0 2px rgb(var(--foreground));
+}
+
+@media screen and (min-width: 768px) {
+	.container {
+		width: 80%;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	.container {
+		width: 60%;
+	}
+}
+
+@media screen and (min-width: 1440px) {
+	.container {
+		width: 50%;
+	}
+
+	.container * {
+		font-size: 1.5rem;
+	}
+
+	.container h1 {
+		font-size: 3rem;
+	}
+}

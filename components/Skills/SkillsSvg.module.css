@@ -1,0 +1,22 @@
+@media only screen and (max-width: 600px) {
+	.svgContainer {
+		position: relative;
+		height: clamp(320px, 50vw, 900px);
+		width: clamp(320px, 50vw, 900px);
+	}
+}
+
+@media screen and (min-width: 600px) {
+	.svgContainer {
+		position: relative;
+		height: clamp(320px, 50vw, 900px);
+		width: clamp(320px, 50vw, 900px);
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.svgContainer {
+		height: clamp(320px, 25vw, 3000px);
+		width: clamp(320px, 25vw, 3000px);
+	}
+}

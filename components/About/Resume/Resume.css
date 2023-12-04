@@ -1,0 +1,45 @@
+.resume input,
+.resume button {
+	font: inherit;
+}
+
+.resume header {
+	background-color: #323639;
+	box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+	padding: 20px;
+	color: white;
+}
+
+.resume header h1 {
+	font-size: inherit;
+	margin: 0;
+}
+
+.resume_container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 10px 0;
+	padding: 10px;
+}
+
+.resume_container_load {
+	margin-top: 1em;
+	color: white;
+}
+
+.resume_container_document .react-pdf__Document {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.resume_container_document .react-pdf__Page {
+	margin: 1em 0;
+	box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+}
+
+.resume_container_document .react-pdf__message {
+	padding: 20px;
+	color: white;
+}

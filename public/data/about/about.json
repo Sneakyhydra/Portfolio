@@ -1,0 +1,27 @@
+{
+	"name": "Dhruv Rishishwar",
+	"description": "I am a full-stack web developer, pursuing my B.Tech in Computer Science & Engineering from Indian Institute of Information Technology, Design and Manufacturing Jabalpur. I strive to make meaningful applications while keeping scalability and user experience in mind.",
+	"profile": {
+		"imageUrl": "/data/about/profile.jpeg",
+		"imageAlt": "Picture of Dhruv Rishishwar"
+	},
+	"contact": {
+		"email": {
+			"href": "mailto:dhruvrishishwar2@gmail.com",
+			"text": "dhruvrishishwar2@gmail.com",
+			"icon": "fa-solid fa-envelope"
+		},
+		"phone": {
+			"href": "tel:+916268086918",
+			"text": "+91 6268086918",
+			"icon": "fa-solid fa-phone"
+		},
+		"linkedin": {
+			"href": "https://www.linkedin.com/in/dhruvrishishwar/",
+			"text": "dhruvrishishwar",
+			"icon": "fa-brands fa-linkedin"
+		}
+	},
+	"githubUrl": "https://github.com/Sneakyhydra",
+	"linkedinUrl": "https://www.linkedin.com/in/dhruvrishishwar/"
+}

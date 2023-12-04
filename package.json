@@ -1,0 +1,27 @@
+{
+  "name": "portfolio",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@mdxeditor/editor": "^1.11.4",
+    "@popperjs/core": "^2.11.8",
+    "bootstrap": "^5.3.2",
+    "framer-motion": "^10.16.5",
+    "next": "14.0.3",
+    "react": "^18",
+    "react-bootstrap": "^2.9.1",
+    "react-dom": "^18",
+    "react-pdf": "^7.5.1",
+    "react-use-downloader": "^1.2.4"
+  },
+  "devDependencies": {
+    "eslint": "^8",
+    "eslint-config-next": "14.0.3"
+  }
+}

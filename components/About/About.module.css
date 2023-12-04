@@ -1,0 +1,15 @@
+.container {
+	padding: 2rem;
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+	flex-direction: column;
+	justify-content: center;
+}
+
+@media screen and (min-width: 1024px) {
+	.container {
+		flex-direction: row;
+		justify-content: space-evenly;
+	}
+}

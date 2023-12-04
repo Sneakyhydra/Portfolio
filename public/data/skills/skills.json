@@ -1,0 +1,58 @@
+{
+	"Languages": [
+		{
+			"name": "Python",
+			"icon": "fa-brands fa-python"
+		},
+		{
+			"name": "C++",
+			"icon": "fa-solid fa-c"
+		},
+		{
+			"name": "Javascript",
+			"icon": "fa-brands fa-js"
+		}
+	],
+	"Web Development": [
+		{
+			"name": "React",
+			"icon": "fa-brands fa-react"
+		},
+		{
+			"name": "Next",
+			"icon": "fa-solid fa-n"
+		},
+		{
+			"name": "Node",
+			"icon": "fa-brands fa-node"
+		},
+		{
+			"name": "Express",
+			"icon": "fa-solid fa-e"
+		},
+		{
+			"name": "Redux",
+			"icon": "fa-brands fa-r"
+		}
+	],
+	"Databases": [
+		{
+			"name": "MySQL",
+			"icon": "fa-solid fa-s"
+		},
+		{
+			"name": "MongoDB",
+			"icon": "fa-solid fa-m"
+		}
+	],
+	"Tools": [
+		{
+			"name": "Git",
+			"icon": "fa-brands fa-git"
+		},
+		{
+			"name": "Github",
+			"icon": "fa-brands fa-github"
+		}
+	]
+}

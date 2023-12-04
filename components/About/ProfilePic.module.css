@@ -1,0 +1,50 @@
+.container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 2rem;
+}
+
+.infoContainer {
+	display: flex;
+	font-size: 1.5rem;
+	width: 100%;
+	gap: 2rem;
+	justify-content: center;
+}
+
+.infoContainer a:hover {
+	box-shadow: 0 0 0 2px rgb(var(--foreground));
+}
+
+.profilePicContainer {
+	border-radius: 50%;
+}
+
+.profilePicContainer:hover {
+	box-shadow: 0 0 0 2px rgb(var(--foreground));
+}
+
+@media only screen and (max-width: 600px) {
+	.profilePicContainer {
+		position: relative;
+		height: clamp(320px, 50vw, 900px);
+		width: clamp(320px, 50vw, 900px);
+	}
+}
+
+@media screen and (min-width: 600px) {
+	.profilePicContainer {
+		position: relative;
+		height: clamp(320px, 50vw, 900px);
+		width: clamp(320px, 50vw, 900px);
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.profilePicContainer {
+		height: clamp(320px, 25vw, 3000px);
+		width: clamp(320px, 25vw, 3000px);
+	}
+}

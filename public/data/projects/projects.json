@@ -1,0 +1,27 @@
+{
+	"ontheway": {
+		"title": "On The Way",
+		"description": "Student Counselling System",
+		"githubUrl": "https://github.com/Sneakyhydra/On-The-Way",
+		"techStack": ["React", "Node", "MySQL"],
+		"liveUrl": "https://on-the-way-sneakyhydra.vercel.app/"
+	},
+	"sentinel": {
+		"title": "Sentinel",
+		"description": "Offline Voice Assistant",
+		"githubUrl": "https://github.com/Sneakyhydra/Sentinel",
+		"techStack": ["Python"]
+	},
+	"stakemate": {
+		"title": "Stake Mate",
+		"description": "Decentralized Staking Platform",
+		"githubUrl": "https://github.com/Sneakyhydra/StakeMate",
+		"techStack": ["React", "Node", "Solidity", "Truffle"]
+	},
+	"artvault": {
+		"title": "Art Vault",
+		"description": "NFT Marketplace",
+		"githubUrl": "https://github.com/Sneakyhydra/ArtVault",
+		"techStack": ["Next", "Solidity", "Hardhat"]
+	}
+}

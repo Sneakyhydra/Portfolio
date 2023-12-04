@@ -1,0 +1,58 @@
+/* Variables */
+:root {
+	--foreground: 225, 239, 246;
+	--background: 23, 29, 28;
+	--background-secondary: 13, 19, 18;
+	--about-primary: 45, 255, 245;
+	--about-secondary: 255, 248, 120;
+	--skills-primary: 153, 0, 255;
+	--skills-secondary: 124, 1, 206;
+	--projects-primary: 255, 64, 102;
+	--blog-primary: 225, 239, 246;
+	--danger: 187, 33, 36;
+}
+
+/* Default css */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background: rgb(var(--background));
+	color: rgb(var(--foreground));
+	width: 100vw;
+	overflow-x: hidden;
+}
+
+.waveContainer {
+	position: absolute;
+	width: 100%;
+	height: 20%;
+	bottom: 0;
+	left: 0;
+	z-index: -10;
+	opacity: 1;
+	overflow: hidden;
+}
+
+.nav-item {
+	padding: 0 1rem;
+	transform: perspective(1px) translateZ(0);
+}
+
+.nav-item a {
+	transform: perspective(1px) translateZ(0);
+	box-shadow: 0 0 1px transparent;
+	margin: 10px;
+	transition-duration: 0.3s;
+	transition-property: box-shadow, transform;
+}
+
+.nav-item a:hover,
+.nav-item a:focus,
+.nav-item a:active {
+	box-shadow: 0px 10px 10px -10px rgba(var(--foreground), 0.5);
+	transform: scale(1.1);
+}
