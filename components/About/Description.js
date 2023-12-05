@@ -22,7 +22,7 @@ const Description = ({ data }) => {
 	const { download } = useDownloader();
 
 	const fileUrl = '/data/about/resume.pdf';
-	const filename = 'Dhruv_Rishishwar_Resume.pdf';
+	const filename = data.name + ' Resume.pdf';
 
 	return (
 		<>
