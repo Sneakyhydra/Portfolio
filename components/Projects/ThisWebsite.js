@@ -30,6 +30,7 @@ const ThisWebsite = () => {
 						border: '1px solid rgb(var(--projects-primary))',
 						borderRadius: '5px',
 						boxShadow: '0 0 10px 0 rgba(var(--projects-primary), 0.5)',
+						backgroundColor: 'rgba(var(--background-secondary), 0.99)',
 						width: '90%',
 						display: 'flex',
 						flexDirection: 'column',

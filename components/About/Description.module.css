@@ -63,6 +63,7 @@
 	background-color: transparent;
 }
 
+.dropdownItem:hover,
 .dropdownItem:hover * {
 	background-color: rgb(var(--about-secondary));
 	color: rgb(var(--background));

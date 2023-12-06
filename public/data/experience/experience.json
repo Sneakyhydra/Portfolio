@@ -1,0 +1,15 @@
+{
+	"dolat-capital": {
+		"title": "Dolat Capital",
+		"url": "https://www.dolatcapital.com/",
+		"logo": "/data/experience/dolat-capital.png",
+		"startDate": "8 Jan 2024",
+		"endDate": "Present",
+		"location": "Mumbai, India",
+		"role": "Software Engineer Intern",
+		"responsibilities": [
+			"Let's see what happens. Joining date is coming close :)"
+		],
+		"technologies": ["C++", "Linux"]
+	}
+}

@@ -19,6 +19,7 @@ const Brand = ({
 	skillsStyles,
 	projectsStyles,
 	blogStyles,
+	expStyles,
 }) => {
 	const [width, setWidth] = useState(1024);
 
@@ -43,6 +44,8 @@ const Brand = ({
 								? aboutStyles.brandText
 								: active === 'skills'
 								? skillsStyles.brandText
+								: active === 'exp'
+								? expStyles.brandText
 								: active === 'projects'
 								? projectsStyles.brandText
 								: blogStyles.brandText
@@ -61,6 +64,8 @@ const Brand = ({
 								? aboutStyles.brandText
 								: active === 'skills'
 								? skillsStyles.brandText
+								: active === 'exp'
+								? expStyles.brandText
 								: active === 'projects'
 								? projectsStyles.brandText
 								: blogStyles.brandText

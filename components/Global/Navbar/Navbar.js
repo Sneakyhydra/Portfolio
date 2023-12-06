@@ -17,6 +17,7 @@ const Navbar = ({ active }) => {
 		skills: 'rgb(var(--skills-primary))',
 		projects: 'rgb(var(--projects-primary))',
 		blog: 'rgb(var(--blog-primary))',
+		exp: 'rgb(var(--exp-primary))',
 	};
 
 	const boxShadowWithoutColor = '0 9px 7px -6px ';
@@ -61,6 +62,16 @@ const Navbar = ({ active }) => {
 		},
 	};
 
+	const expStyles = {
+		brandText: {
+			color: colors.exp,
+		},
+		itemText: {
+			color: activeTextColor,
+			boxShadow: boxShadowWithoutColor + colors.exp,
+		},
+	};
+
 	return (
 		<>
 			<nav
@@ -76,6 +87,7 @@ const Navbar = ({ active }) => {
 						skillsStyles={skillsStyles}
 						projectsStyles={projectsStyles}
 						blogStyles={blogStyles}
+						expStyles={expStyles}
 					/>
 					<Toggler />
 					<Collapsible
@@ -84,6 +96,7 @@ const Navbar = ({ active }) => {
 						skillsStyles={skillsStyles}
 						projectsStyles={projectsStyles}
 						blogStyles={blogStyles}
+						expStyles={expStyles}
 					/>
 				</div>
 			</nav>

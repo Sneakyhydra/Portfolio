@@ -3,12 +3,14 @@
 	--foreground: 225, 239, 246;
 	--background: 23, 29, 28;
 	--background-secondary: 13, 19, 18;
-	--about-primary: 45, 255, 245;
-	--about-secondary: 255, 248, 120;
+	--about-primary: 255, 248, 120;
+	--about-secondary: 45, 255, 245;
 	--skills-primary: 153, 0, 255;
 	--skills-secondary: 124, 1, 206;
 	--projects-primary: 255, 64, 102;
 	--blog-primary: 225, 239, 246;
+	--exp-primary: 116, 254, 189;
+	--exp-secondary: 1, 114, 175;
 	--danger: 187, 33, 36;
 }
 
@@ -38,7 +40,6 @@ body {
 }
 
 .nav-item {
-	padding: 0 1rem;
 	transform: perspective(1px) translateZ(0);
 }
 

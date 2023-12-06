@@ -50,7 +50,7 @@ const Description = ({ data }) => {
 						</Dropdown.Toggle>
 
 						<Dropdown.Menu
-							style={{ backgroundColor: 'rgb(var(--background))' }}
+							style={{ backgroundColor: 'rgb(var(--background-secondary))' }}
 						>
 							{Object.entries(data.contact).map(([key, value]) => {
 								return (

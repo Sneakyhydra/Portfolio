@@ -9,12 +9,17 @@ import { motion } from 'framer-motion';
 // Hooks
 import { useEffect, useState } from 'react';
 
+// Data
+import experience from '@/public/data/experience/experience.json';
+import articles from '@/public/data/articles/articles.json';
+
 const Collapsible = ({
 	active,
 	aboutStyles,
 	skillsStyles,
 	projectsStyles,
 	blogStyles,
+	expStyles,
 }) => {
 	const [width, setWidth] = useState(1024);
 
@@ -54,6 +59,21 @@ const Collapsible = ({
 								Skills
 							</Link>
 						</li>
+						{Object.keys(experience).length > 0 ? (
+							<li className='nav-item'>
+								<Link
+									className='nav-link'
+									aria-current='page'
+									href='/experience'
+									style={active === 'exp' ? expStyles.itemText : {}}
+								>
+									Experience
+								</Link>
+							</li>
+						) : (
+							<></>
+						)}
+
 						<li className='nav-item'>
 							<Link
 								className='nav-link'
@@ -63,15 +83,20 @@ const Collapsible = ({
 								Projects
 							</Link>
 						</li>
-						<li className='nav-item'>
-							<Link
-								className='nav-link'
-								href='/blog'
-								style={active === 'blog' ? blogStyles.itemText : {}}
-							>
-								Blog
-							</Link>
-						</li>
+
+						{Object.keys(articles).length > 0 ? (
+							<li className='nav-item'>
+								<Link
+									className='nav-link'
+									href='/blog'
+									style={active === 'blog' ? blogStyles.itemText : {}}
+								>
+									Blog
+								</Link>
+							</li>
+						) : (
+							<></>
+						)}
 					</ul>
 				</div>
 			) : (
@@ -96,6 +121,20 @@ const Collapsible = ({
 								Skills
 							</Link>
 						</li>
+						{Object.keys(experience).length > 0 ? (
+							<li className='nav-item'>
+								<Link
+									className='nav-link'
+									aria-current='page'
+									href='/experience'
+									style={active === 'exp' ? expStyles.itemText : {}}
+								>
+									Experience
+								</Link>
+							</li>
+						) : (
+							<></>
+						)}
 						<li className='nav-item'>
 							<Link
 								className='nav-link'
@@ -105,15 +144,19 @@ const Collapsible = ({
 								Projects
 							</Link>
 						</li>
-						<li className='nav-item'>
-							<Link
-								className='nav-link'
-								href='/blog'
-								style={active === 'blog' ? blogStyles.itemText : {}}
-							>
-								Blog
-							</Link>
-						</li>
+						{Object.keys(articles).length > 0 ? (
+							<li className='nav-item'>
+								<Link
+									className='nav-link'
+									href='/blog'
+									style={active === 'blog' ? blogStyles.itemText : {}}
+								>
+									Blog
+								</Link>
+							</li>
+						) : (
+							<></>
+						)}
 					</ul>
 				</motion.div>
 			)}
