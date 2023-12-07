@@ -40,17 +40,19 @@ const Project = ({
 
 				<div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
 					<div className={styles.btnContainer}>
-						<a
-							href={githubUrl}
-							target='_blank'
-							className={'btn ' + styles.githubBtn}
-							style={{
-								borderColor: '#e1eff6',
-							}}
-						>
-							<i className='fa-brands fa-github'></i>
-							&nbsp;&nbsp;Github
-						</a>
+						{githubUrl && (
+							<a
+								href={githubUrl}
+								target='_blank'
+								className={'btn ' + styles.githubBtn}
+								style={{
+									borderColor: '#e1eff6',
+								}}
+							>
+								<i className='fa-brands fa-github'></i>
+								&nbsp;&nbsp;Github
+							</a>
+						)}
 						{liveUrl && (
 							<Link
 								href={'projects/' + name + '/live'}

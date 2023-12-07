@@ -34,17 +34,19 @@ const Introduction = ({ data, name }) => {
 			</p>
 
 			<div className={styles.btnContainer}>
-				<a
-					href={data.githubUrl}
-					target='_blank'
-					className={'btn ' + styles.githubBtn}
-					style={{
-						borderColor: 'rgb(var(--foreground))',
-					}}
-				>
-					<i className='fa-brands fa-github'></i>
-					&nbsp;&nbsp;Github
-				</a>
+				{data.githubUrl && (
+					<a
+						href={data.githubUrl}
+						target='_blank'
+						className={'btn ' + styles.githubBtn}
+						style={{
+							borderColor: 'rgb(var(--foreground))',
+						}}
+					>
+						<i className='fa-brands fa-github'></i>
+						&nbsp;&nbsp;Github
+					</a>
+				)}
 				{data.liveUrl && (
 					<Link href={name + '/live'} className={'btn ' + styles.liveBtn}>
 						<i className='fa-solid fa-globe'></i>

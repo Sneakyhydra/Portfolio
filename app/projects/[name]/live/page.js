@@ -26,6 +26,7 @@ export default function Index({ params }) {
 				margin: '0',
 				padding: '0',
 				overflow: 'hidden',
+				background: 'rgb(var(--foreground))',
 			}}
 		>
 			<button
