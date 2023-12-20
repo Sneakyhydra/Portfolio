@@ -1,14 +1,11 @@
-'use client';
-
 // Next
-import { useRouter } from 'next/navigation';
+import Link from 'next/link';
 
 // Data
 import projects from '@/public/data/projects/projects.json';
 
 export default function Index({ params }) {
 	const project = projects[params.name];
-	const router = useRouter();
 
 	if (!project) {
 		return <h1>Project not found</h1>;
@@ -29,14 +26,14 @@ export default function Index({ params }) {
 				background: 'rgb(var(--foreground))',
 			}}
 		>
-			<button
-				onClick={() => router.back()}
+			<Link
+				href={`/projects/${params.name}`}
 				style={{ alignItems: 'center', width: '100%' }}
 				className='btn btn-danger'
 			>
 				<i className='fa-solid fa-right-from-bracket'></i>
 				&nbsp; Leave Demo
-			</button>
+			</Link>
 			<iframe
 				src={project.liveUrl}
 				width='100%'

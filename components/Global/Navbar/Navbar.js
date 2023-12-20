@@ -76,7 +76,7 @@ const Navbar = ({ active }) => {
 		<>
 			<nav
 				className={
-					'navbar navbar-dark navbar-expand-lg bg-transparent ' + styles.navbar
+					'navbar navbar-dark navbar-expand-lg ' + styles.navbar
 				}
 			>
 				<div className={styles.container + ' container-fluid'}>

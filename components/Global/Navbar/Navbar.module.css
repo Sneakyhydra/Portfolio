@@ -1,6 +1,7 @@
 .navbar {
 	width: 100vw;
 	overflow: hidden;
+	background-color: rgb(var(--background));
 }
 
 .container {
